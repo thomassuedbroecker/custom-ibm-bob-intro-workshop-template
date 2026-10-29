@@ -1,0 +1,12 @@
+# .bobignore - paths IBM Bob must not read or write (gitignore syntax)
+# Docs: https://bob.ibm.com/docs/ide/configuration/bobignore
+
+# Secrets and credentials
+.env
+.env.*
+
+# Exported task session history (full prompts and tool output)
+task-history/
+
+# OS metadata
+.DS_Store

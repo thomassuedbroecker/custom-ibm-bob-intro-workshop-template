@@ -1,0 +1,15 @@
+IBM Bob Hands-On Workshop: Template Repository
+Copyright 2026 Thomas Südbröcker
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This repository contains the workshop template, lab guides, Bob workspace
+configuration, a lifecycle hook and the "ai-regulatory-compliance" skill.
+
+IBM Bob, Bob Shell and the IBM Bob documentation are IBM products and content.
+They are not part of this repository and are not covered by this license.
+
+Third-party components that the labs reference (Express, mcp-server-sqlite,
+the mcp Python library, uv, TM1py and others) are installed or downloaded by
+the user under their own licenses. See the section "Third-party components and
+references" in README.md.

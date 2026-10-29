@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .bob/hooks/export-task-history.mjs",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}
