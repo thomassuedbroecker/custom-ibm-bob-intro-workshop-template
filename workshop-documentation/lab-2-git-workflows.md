@@ -13,6 +13,8 @@
 
 > **💡 Name your Bob task.** Give each new task a short title, for example `"Lab 2 - Git workflow"`. The export hook uses the title as the folder name in `task-history/`, and the AI Regulatory Compliance skill (Lab 6) uses it for its provenance records.
 >
+> **⚠️ Community add-on, not an IBM product:** The `task-history/` export hook and the `ai-regulatory-compliance` skill are workshop-specific add-ons created by the workshop author based on hands-on experience. They are **not** part of the official IBM Bob product and are **not** officially supported by IBM.
+>
 > The folder starts as `NN_unnamed_task/`. It gets the task title only when a second step of the task appears in the sidebar. If it keeps the generic name, rename the folder yourself. The GIF shows a task with two steps:
 
 ![Bob sidebar with a named task of two steps, and the matching folder in task-history/](../images/03-bob-task-history.gif)
@@ -105,6 +107,8 @@ flowchart TB
 Do this **before** you create the feature branch. Uncommitted Lab 1 files would stay in your working tree while you switch branches, and a vague prompt such as "commit the changes" can pull them into the Lab 2 commit and the PR.
 
 > **Why is `task-history/` never committed?** The exports contain your complete prompts, tool output, local paths and the repository name. They can contain secrets or personal data that appeared in a command output, they are specific to your machine, and every task turn rewrites them. Bob also cannot read them, because they are listed in [`.bobignore`](../.bobignore). Only [`task-history/README.md`](../task-history/README.md) belongs in the repository.
+
+> **📖 Advanced topic — AI Provenance & Task History (community add-on):** The task history exports are not just a safety concern — they are also the raw evidence for the compliance provenance workflow in Lab 6. Note that the export hook and the `ai-regulatory-compliance` skill are **not** official IBM Bob features; they are workshop-specific add-ons. If you want to understand the broader motivation behind engineering provenance for AI-assisted development, see the [Further Reading section in the workshop README](README.md#-further-reading-understanding-task-history--ai-provenance-advanced-topic) for two blog posts and a video walkthrough. This is optional background; nothing in Labs 1–5 requires it.
 
 1. 🖥️ **Terminal:** check that Git ignores the exports and shows only the README. This is how the repository is configured (see the `task-history/*` rule in [`.gitignore`](../.gitignore)):
    ```bash

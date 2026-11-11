@@ -13,6 +13,8 @@
 
 > **💡 Name your Bob task.** Give each new task a short title, for example `"Lab 4 - SQLite MCP"`. The export hook uses the title as the folder name in `task-history/`, and the AI Regulatory Compliance skill (Lab 6) uses it for its provenance records.
 >
+> **⚠️ Community add-on, not an IBM product:** The `task-history/` export hook and the `ai-regulatory-compliance` skill are workshop-specific add-ons created by the workshop author based on hands-on experience. They are **not** part of the official IBM Bob product and are **not** officially supported by IBM.
+>
 > The folder starts as `NN_unnamed_task/`. It gets the task title only when a second step of the task appears in the sidebar. If it keeps the generic name, rename the folder yourself. The GIF shows a task with two steps:
 
 ![Bob sidebar with a named task of two steps, and the matching folder in task-history/](../images/03-bob-task-history.gif)

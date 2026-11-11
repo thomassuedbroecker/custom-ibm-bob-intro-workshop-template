@@ -139,6 +139,8 @@ flowchart LR
 
 ### Step 6.5: Wrap-Up — Document How You Built Your Apps with Bob (`ai-regulatory-compliance` skill)
 
+> **⚠️ Community add-on, not an IBM product:** The `task-history/` export hook and the `ai-regulatory-compliance` skill included in this workspace are **not** part of the official IBM Bob product and are **not** officially supported by IBM. They are workshop-specific add-ons created by the workshop author based on hands-on experience with agentic development. The provenance concept and the skill are provided as-is for educational purposes.
+
 The workspace includes the `ai-regulatory-compliance` skill in [`.bob/skills/ai-regulatory-compliance/`](../.bob/skills/ai-regulatory-compliance/SKILL.md). It documents **how the apps were built with an AI coding assistant** (EU AI Act Art. 13, 14, 16, 50 and GDPR Art. 5, 22, 25), based on the sessions exported to `task-history/`. It does **not** assess AI features of the apps themselves. This is documentation support for a consultant, not legal advice.
 
 ```mermaid
@@ -182,6 +184,18 @@ git status --short -uall | grep task-history
 ```
 
 *Expected: no output (or only `task-history/README.md`).*
+
+### 📖 Further Reading: Understanding AI Provenance (Advanced Topic — Community Add-On)
+
+> **⚠️ Community add-on:** The task history export and the AI provenance concept described here are **not** official IBM Bob features. They are based on the workshop author's experience and are provided as additional learning material only.
+
+The task history you accumulated in Labs 1–5 is more than an audit log — it is the engineering evidence that connects the code you shipped to the AI-assisted process that produced it. The resources below explain the conceptual and regulatory motivation behind this approach. They are optional background; nothing in this step requires them.
+
+| Resource | Description |
+| :--- | :--- |
+| [14 Days of Intensive Agentic Coding — What I Learned from Working with IBM Bob](https://suedbroecker.net/2026/09/11/14-days-of-intensive-agentic-coding-what-i-learned-from-working-with-ibm-bob-an-agentic-ide/) | Practical lessons from extended agentic coding, including how task history accumulates and what it reveals about AI-assisted workflows. |
+| [From Idea to Responsibility — Why AI Coding Needs Engineering Provenance](https://suedbroecker.net/2026/08/12/from-idea-to-responsibility-why-ai-coding-needs-engineering-provenance/) | Explains the reasoning behind AI development provenance, connecting engineering practice to EU AI Act and GDPR requirements. |
+| [YouTube: IBM Bob & AI Provenance — Video Overview](https://youtu.be/-aC_Sni1ot8?si=ilnZDcfn6ieGzwxs) | A video walkthrough of the concepts and tooling covered in the blog posts above. |
 
 ---
 

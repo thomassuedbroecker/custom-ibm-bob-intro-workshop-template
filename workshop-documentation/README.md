@@ -112,6 +112,7 @@ No additional setup required. The workshop was authored and tested on macOS (Dar
 - **Recommended:** Use **Git Bash**, **WSL 2 (Windows Subsystem for Linux)**, or the **Windows Terminal** with a bash-compatible shell. All `bash`-style shell commands in the labs work without modification in these environments.
 - **Native PowerShell / `cmd.exe`:** Path separators and some shell syntax differ. Minor manual translation may be needed for the occasional `bash` snippet.
 - Keyboard shortcuts throughout the labs that show `Cmd+…` (macOS) map to `Ctrl+…` on Windows (e.g. `Ctrl+Shift+P` for the Command Palette, `Ctrl+Shift+X` for the Extensions panel).
+- **Running `bash` commands from Bob chat on Windows:** When you copy a `bash` command block from a lab and paste it into the **Bob chat** (instead of your terminal), Bob automatically converts the command to the equivalent native Windows command before running it. This is helpful if you are in a quick-exploration flow. However, the labs are designed to have **you** run commands in your own terminal — not Bob — so that you see each step and keep control of what executes. Always copy `bash` blocks into your terminal (Git Bash / WSL 2 / Windows Terminal), not into the Bob chat.
 
 ### Linux
 - All shell commands use standard `bash` syntax and work without modification on any major distribution (Ubuntu, Debian, Fedora, etc.).
@@ -153,6 +154,24 @@ custom-ibm-bob-intro-workshop-template/
 ├── NOTICE                              # Copyright and third-party notice
 └── README.md                           # Repository entrypoint
 ```
+
+---
+
+## 📖 Further Reading: Understanding Task History & AI Provenance (Advanced Topic — Community Add-On)
+
+> **⚠️ Community add-on, not an IBM product:** The `task-history/` export hook, the `ai-regulatory-compliance` skill, and the provenance concept described in this section are **not** part of the official IBM Bob product and are **not** officially supported by IBM. They are workshop-specific add-ons created by the workshop author based on hands-on experience with agentic development, and are provided here for educational purposes only.
+
+The `task-history/` folder holds session exports that the Stop hook writes at the end of every task. In Lab 6 these exports feed the `ai-regulatory-compliance` skill to produce a compliance provenance document. Understanding *why* this matters — and how AI-assisted development provenance fits into a broader engineering responsibility framework — is an advanced topic that goes beyond the workshop scope.
+
+If you want to dig deeper, the following resources explain the concepts:
+
+| Resource | Description |
+| :--- | :--- |
+| [14 Days of Intensive Agentic Coding — What I Learned from Working with IBM Bob](https://suedbroecker.net/2026/09/11/14-days-of-intensive-agentic-coding-what-i-learned-from-working-with-ibm-bob-an-agentic-ide/) | Practical lessons from extended agentic coding, including how task history accumulates and what it reveals about AI-assisted workflows. |
+| [From Idea to Responsibility — Why AI Coding Needs Engineering Provenance](https://suedbroecker.net/2026/08/12/from-idea-to-responsibility-why-ai-coding-needs-engineering-provenance/) | Explains the reasoning behind AI development provenance, connecting engineering practice to regulatory and accountability requirements. |
+| [YouTube: IBM Bob & AI Provenance — Video Overview](https://youtu.be/-aC_Sni1ot8?si=ilnZDcfn6ieGzwxs) | A video walkthrough of the concepts and tooling covered in the blog posts above. |
+
+> **ℹ️ This is an advanced, optional topic.** Nothing in Labs 1–5 requires reading these resources. Lab 6 references the compliance skill; these links provide the conceptual background behind it.
 
 ---
 
