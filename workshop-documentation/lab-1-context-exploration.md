@@ -96,6 +96,12 @@ Hover over the **Auto-Approve toolbar** above the chat input and look at the ava
    - **Approve** to run the action, or **Reject** to cancel it.
    - **Edit the command** in the approval prompt before approving if you want to change it (for example, to narrow `git add` to explicit paths in Lab 2).
 4. **Task-level approvals:** You can set the tool group approvals for a single task. These appear first in the approval prompt and apply only to the current task, independent of your global settings.
+
+   > **💡 Toolbar vs. Settings — scope matters:**
+   > The Auto-Approve toolbar in the agentic sidebar controls permissions **for the current task and step only**. Changes you make there do **not** persist across tasks or sessions.
+   > To change permissions **permanently** (so they apply to every new task by default), open Bob's **Settings** instead (`Cmd+,` / `Ctrl+,`, then search for `auto-approve` or `permissions`).
+   >
+   > ![Bob Settings panel showing the permanent auto-approve permission controls](../images/09-bob-settings-perm.png)
 5. **Protect sensitive files:** Auto-approve does not replace file protection. [`.bobignore`](../.bobignore) blocks Bob from reading or writing the paths listed there (currently `.env`, `.env.*`, and `task-history/`). In the optional Lab 6 you temporarily make `task-history/` readable for the compliance skill and restore it afterwards. In Lab 4 you will optionally add `.bob/mcp.json` to [`.bobignore`](../.bobignore) if you want to prevent Bob from editing it directly.
 
 > **⚠️ Warning:** Auto-approve bypasses confirmation prompts and gives Bob direct access to your system. Command execution is especially risky because it can cause data loss or file corruption. Enable auto-approval only for actions you fully trust, and never auto-approve **Execute** for commands that push, delete or force-push (Lab 2).
