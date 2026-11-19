@@ -197,6 +197,16 @@ The document always contains these sections in order:
 | Never fabricate values | Unverified fields shown as `[consultant to confirm]` in amber |
 | Legal Reference Appendix is mandatory | Provides verified article citations and law URLs in every output |
 
+### Context efficiency and task handoff
+
+`SKILL.md` contains the shared `## Context Efficiency & Task Handoff` section.
+Bob reads an existing `task-handoff.md` (workspace root or `repos/<name>/`)
+first and continues from it, reads only the `task-history/` fields and project
+files it needs, and writes a short `task-handoff.md` when the document cannot
+be finished in one task (for example while waiting for consultant answers).
+The handoff file is separate from `task-history/` and must not quote
+conversation text either.
+
 ---
 
 ## Legal reference sources used in this skill
